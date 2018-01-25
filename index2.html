@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ReactJS</title>
+    <script src="http://fb.me/react-0.12.2.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+  </head>
+  <body>
+    <script type="text/jsx">
+      var App = React.createClass({
+        render: function () {
+          return React.createElement('h1', null, "Hello ReactJS");
+        }
+      })
+      React.render(React.createElement(App, null), document.getElementById('root'));
+    </script>
+    <div id="root"></div>
+  </body>
+</html>
